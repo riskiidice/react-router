@@ -1,8 +1,8 @@
 import { FETCH_POSTS } from '../actions/index';
-export default (state, action) => {
-  console.log(state);
+export default function (state = null, action) {
   switch (action.type) {
     case action.type == FETCH_POSTS:
-      console.log('fetch post');
+      return state;
   }
+  return state;
 }
